@@ -54,9 +54,28 @@ p {
   margin: 0;
 }
 
+address {
+  padding: 30px 0;
+  font-style: normal;
+  font-weight: 300;
+}
+
+address span {
+  font-weight: 700;
+}
+
+hr {
+  width: 90%;
+}
+
+a:visited {
+  color: inherit;
+}
+
 /* --- Class Selectors --------- */
 
-.main-header {
+.main-header,
+.main-footer {
   background-color: #FCFCFC;
 }
 
@@ -74,6 +93,26 @@ p {
 .main-profile-image {
   max-width: 70%;
   padding: 25px 0;
+}
+
+.contact,
+.bottom-nav-container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.bottom-nav-container {
+  border-top: 0.01em solid #E8E8E8;
+  height: 80px;
+  text-align: left;
+}
+
+/* --- Clearfix ---------------- */
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* --- Media Queries ----------- */
