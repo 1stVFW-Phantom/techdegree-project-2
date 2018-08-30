@@ -82,7 +82,7 @@ a:visited {
 .main-header-container,
 .main-container {
   margin: 0 auto;
-  padding-bottom: 50px; /* Check to ensure bottom of container is not too spaced with footer */
+  padding-bottom: 50px;
   width: 90%
 }
 
