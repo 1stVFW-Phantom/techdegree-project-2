@@ -176,6 +176,16 @@ a:visited {
     font-size: 1.15em;
   }
 
+  .main-container p {
+    font-size: .9em; /* for browsers not supporting vw */
+    font-size: 2vw;
+    max-width: 80%;
+  }
+
+  .wrapper{
+    border: 1px solid red;
+  }
+
   .contact p {
     width: 70%;
     font-size: 1.15em;
