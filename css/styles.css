@@ -168,6 +168,12 @@ a:visited {
     width: 92%;
   }
 
+  /* added to create more space below only main-container and main-footer */
+  .main-container,
+  .main-footer {
+    padding: 30px 0 50px;
+  }
+
   .main-header-container p {
     float: left;
     text-align: left;
@@ -178,8 +184,9 @@ a:visited {
 
   .main-container p {
     font-size: .9em; /* for browsers not supporting vw */
-    font-size: 2vw;
-    max-width: 80%;
+    font-size: 1.8vw;
+    max-width: 72%;
+    line-height: 1.5em;
   }
 
   .contact p {
