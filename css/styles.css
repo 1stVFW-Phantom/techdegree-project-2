@@ -182,10 +182,6 @@ a:visited {
     max-width: 80%;
   }
 
-  .wrapper{
-    border: 1px solid red;
-  }
-
   .contact p {
     width: 70%;
     font-size: 1.15em;
