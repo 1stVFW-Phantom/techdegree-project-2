@@ -165,15 +165,19 @@ a:visited {
     font-size: 1.15em;
   }
 
-  .wrapper {
-    display: inline-block;
-    width: 48.8%;
-  }
+
 
   /* --- Psuedo selectors ------ */
 
-  /* adds right padding to all wrapper divs on left side of page */
+  /* adds float and width to all elements on right side */
+  .wrapper:nth-of-type(even) {
+    float: right;
+    width: 48.8%;
+  }
+
+  /* adds float and width to all elements on left side */
   .wrapper:nth-of-type(odd) {
-    padding-right: 15px;
+    float: left;
+    width: 48.8%;
   }
 }
