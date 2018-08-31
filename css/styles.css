@@ -94,6 +94,12 @@ a:visited {
   font-size: 0.9em;
 }
 
+.main-image-container p,
+.contact p,
+.contact address {
+  color: #7C7C7C;
+}
+
 .main-profile-image {
   max-width: 70%;
   padding: 25px 0;
@@ -262,33 +268,45 @@ a:visited {
     margin: 0 auto;
     padding: 30px 0;
     width: 95%;
-}
+  }
 
-/* overrides above to make only image container 90%, matches header */
-.main-image-container {
-  width: 90%;
-}
+  /* overrides above to make only image container 90%, matches header */
+  .main-image-container {
+    width: 90%;
+  }
 
-.main-header-container {
-  padding: 30px 0 0 0;
-}
+  .main-header-container {
+    padding: 30px 0 0 0;
+  }
 
-.main-image-container {
-  padding: 0 0 30px 0;
-}
+  .main-image-container {
+    padding: 0 0 30px 0;
+  }
 
-/* added to create more space below only main-container */
-.main-container {
-    padding: 30px 0 50px;
-}
+  /* adds grey background behind the main content div on desktop */
+  .main-wrapper {
+    background-color: #F9F9F9;
+  }
 
-.main-footer {
-  padding: 0;
-}
+  /* added to create more space below only main-container */
+  .main-container {
+      padding: 30px 0 50px;
+      background-color: #FFF; /* puts the white background back into the main content area */
+  }
+
+  .main-footer {
+    padding: 0;
+  }
 
   .main-image-container p {
     padding: 50px 0;
     width: 50%;
+  }
+
+  /* --- ID Selectors ---------- */
+
+  #portfolio {
+    margin: 40px 0;
   }
 
   /* --- Psuedo selectors ------ */
@@ -296,13 +314,13 @@ a:visited {
   /* removes float from previous media query */
   .wrapper:nth-of-type(even) {
     float: none;
-    width: 29%;
+    width: 32%;
   }
 
   /* removes float from previous media query */
   .wrapper:nth-of-type(odd) {
     float: none;
-    width: 29%;
+    width: 32%;
   }
 
   .wrapper {
