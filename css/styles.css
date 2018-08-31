@@ -9,6 +9,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  line-height: 1.75em;
 }
 
 h1 {
@@ -104,6 +105,8 @@ a:visited {
 .bottom-nav-container {
   border-top: 0.01em solid #E8E8E8;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
 
 .bottom-nav-header {
@@ -113,13 +116,8 @@ a:visited {
   margin: 0;
 }
 
-.footer-nav {
-  float: right;
-}
-
 .footer-nav ul {
   margin: 0;
-  padding-top: 3px; /* To align with <h3> on same line */
 }
 
 .footer-nav li {
@@ -141,3 +139,41 @@ a:visited {
 }
 
 /* --- Media Queries ----------- */
+
+@media (min-width: 400px) {
+
+  /* --- Class Selectors ------- */
+
+  .main-nav li{
+    display: inline-block;
+  }
+
+  .main-nav ul li {
+    background-color: #F9F9F9;
+  }
+
+  .main-profile-image {
+    float: right;
+    width: 42.5%;
+  }
+
+  .main-header-container p {
+    float: left;
+    text-align: left;
+    width: 55%;
+    padding: 25px 0;
+    font-size: 1.15em;
+  }
+
+  .wrapper {
+    display: inline-block;
+    width: 48.8%;
+  }
+
+  /* --- Psuedo selectors ------ */
+
+  /* adds right padding to all wrapper divs on left side of page */
+  .wrapper:nth-of-type(odd) {
+    padding-right: 15px;
+  }
+}
