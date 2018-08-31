@@ -3,6 +3,9 @@
 /* Use 400 for <h2s> use 700 for bold */
 /* font-family: 'Open Sans', sans-serif; */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+/* use for skills section */
+/* font-family: 'M PLUS Rounded 1c', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
 
 /* --- Universal selectors ----- */
 * {
@@ -96,6 +99,12 @@ a:visited {
   font-size: 0.9em;
 }
 
+.main-image-container p {
+  padding-bottom: 30px;
+  margin: 0 auto;
+  width: 80%;
+}
+
 .main-image-container p,
 .contact p,
 .contact address {
@@ -105,6 +114,29 @@ a:visited {
 .main-profile-image {
   max-width: 70%;
   padding: 25px 0;
+}
+
+.skills-container {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: #424242;
+  color: white;
+  margin: 0 -7% -11%; /* to stretch this container full-width of screen and remove whitespace below */
+}
+
+.skills-container p {
+  width: 80%;
+  font-size:.8em;
+  padding-top: 20px;
+}
+
+.skills-container li {
+  font-size: .8em;
+  background-color: #F9F9F9;
+  color: black;
+  border: 1px solid #424242;
+  border-radius: 5px;
+  width: 45%;
+  margin: 5px auto;
 }
 
 .contact-header {
@@ -132,6 +164,20 @@ a:visited {
 .footer-nav li {
   text-transform: uppercase;
   font-size: 0.8em;
+}
+
+/* --- ID Selectors ---------- */
+
+#skills {
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 30px;
+  height: .9em;
+}
+
+/* --- Psuedo Selectors -------- */
+
+.wrapper p:last-child {
+  padding-bottom: 30px;
 }
 
 /* Psuedo selector, to hide unwanted list items on mobile screens */
@@ -208,6 +254,29 @@ a:visited {
     line-height: 1.5em;
   }
 
+  .spacing-wrapper {
+    padding-bottom: 50px;
+  }
+
+  .skills-container p {
+    padding: 15px 0;
+  }
+
+  .skills-container ul {
+    padding: 0 30px 50px;
+    white-space: normal;
+  }
+
+  .skills-container li {
+    display: inline-block;
+    padding: 5px;
+    background-color: #F9F9F9;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: auto; /* fixes sizing issue from mobile to medium device */
+  }
+
   .contact p {
     width: 70%;
     font-size: 1.15em;
@@ -231,6 +300,11 @@ a:visited {
     padding: 10px 5px;
   }
 
+  .skills-container li:hover {
+    background-color: #58CE83;
+    color: white;
+  }
+
   /* removes "BACK TO TOP" link for larger devices */
   .footer-nav li:first-child {
     display: none;
@@ -238,6 +312,14 @@ a:visited {
   /* restores all other links to their default values */
   .footer-nav li:not(:first-child) {
     display: inline-block;
+  }
+
+  /* --- ID Selectors ---------- */
+
+  #skills {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 30px;
+    height: .9em;
   }
 }
 
@@ -268,6 +350,13 @@ a:visited {
   }
 
   .main-nav ul li {
+    /* padding: 10px 25px; */
+    background-color: #424242;
+    color: white;
+    margin: -2px;
+    border: 1px solid #424242;
+  }
+  .main-nav a {
     padding: 10px 25px;
   }
 
@@ -310,8 +399,37 @@ a:visited {
 
   /* added to create more space below only main-container */
   .main-container {
-      padding: 30px 0 50px;
+      padding-top: 30px;
+      padding-bottom: 0;
       background-color: #FFF; /* puts the white background back into the main content area */
+  }
+
+  .spacing-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .skills-container {
+    margin: 0 auto;
+  }
+
+  .skills-container p {
+    padding: 15px 0;
+  }
+
+  .skills-container ul {
+    padding-bottom: 50px;
+  }
+
+  .skills-container li {
+    display: inline-block;
+    padding: 5px;
+    background-color: #F9F9F9;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: auto;
+    margin: 0;
   }
 
   .main-footer {
@@ -329,7 +447,18 @@ a:visited {
     margin: 40px 0;
   }
 
+  #skills {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 30px;
+    height: .9em;
+  }
+
   /* --- Psuedo selectors ------ */
+
+  .main-nav li:hover {
+    color: black;
+    background-color: #F9F9F9;
+  }
 
   /* removes float from previous media query */
   .wrapper:nth-of-type(even) {
@@ -354,11 +483,26 @@ a:visited {
     max-width: 88%;
   }
 
+  .skills-container li:hover {
+    background-color: #58CE83;
+    color: white;
+  }
+
   .contact p {
     width: 50%;
   }
 
   .footer-nav ul li {
     padding: 10px 25px;
+  }
+}
+
+/* added to prevent h1 at the top of the page from wrapping and pushing the navbar out of the screen */
+
+@media (min-width: 769px) and (max-width: 890px) {
+  .main-header-container h1 {
+    font-size: 2.5vw;
+    margin-right: 15px;
+    white-space: nowrap;
   }
 }
