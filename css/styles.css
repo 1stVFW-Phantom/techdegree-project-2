@@ -122,6 +122,7 @@ a:visited {
   background-color: #424242;
   color: white;
   margin: 0 -5.5% -7%; /* to stretch this container full-width of screen and remove whitespace below */
+  padding-bottom: 30px;
 }
 
 .skills-container p {
@@ -196,7 +197,7 @@ a:visited {
 
 /* --- Media Queries ----------- */
 
-@media (min-width: 400px) {
+@media (min-width: 767px) {
 
   /* --- Class Selectors ------- */
 
@@ -257,6 +258,10 @@ a:visited {
 
   .spacing-wrapper {
     padding-bottom: 50px;
+  }
+
+  .skills-container {
+    padding-bottom: 0;
   }
 
   .skills-container p {
@@ -324,14 +329,7 @@ a:visited {
   }
 }
 
-@media (min-width: 550px) {
-  /* prevents nav bar from forcing the header to text-wrap in the footer */
-  .footer-nav ul li {
-    padding: 10px 15px;
-  }
-}
-
-@media (min-width: 769px) {
+@media (min-width: 1023px) {
 
   /* --- Class Selectors ------- */
   .main-header-container {
@@ -495,15 +493,5 @@ a:visited {
 
   .footer-nav ul li {
     padding: 10px 25px;
-  }
-}
-
-/* added to prevent h1 at the top of the page from wrapping and pushing the navbar out of the screen */
-
-@media (min-width: 769px) and (max-width: 890px) {
-  .main-header-container h1 {
-    font-size: 2.5vw;
-    margin-right: 15px;
-    white-space: nowrap;
   }
 }
